@@ -1,0 +1,187 @@
+/* Importando fuente externa de google fonts Lato */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Nunito:wght@300;400;500;600;700&family=Roboto:wght@100;400;500&display=swap");
+
+/* Declaracion de variables para css */
+:root {
+  --color1: #0087BE;
+  --color2: #444444;
+  --color3: #f2f2f2;
+  --color4: #a6a6a6;  
+  --color5: #ffff;
+  /* tipografias a usar en la pagina */
+  --fuente-titulo: "Lato", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* Espaciado al inicio y final de la sección */
+  line-height: 1.5;
+}
+/* Clase contenedor para todas las áreas: 80% */
+
+.contenedor {
+  max-width: 80%;
+}
+h1 {
+  font-family: var(--fuente-titulo);
+}
+p {
+  font-family: var(--fuente-titulo);
+  margin-bottom: 50px;
+}
+
+/* Estilos de la primera seccion- */
+.seccion01 {
+  background-image: url("./img/banner/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  height: 600px;
+  margin-bottom: 50px;  
+}
+.banner {
+  border: 5px solid var(--color1);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.banner-text {
+  margin-right: 100px;
+  max-width: 50%;
+  text-align: end;
+}
+.banner-text div {
+  margin: 10px;
+}
+.banner-text-title {
+  color: var(--color1);
+  font-size: 8px;
+}
+.banner-text-paragr h1 {
+  font: 35px bold;
+  margin-bottom: 25px;
+}
+
+.banner-text-paragr p {
+  color: var(--color2);
+  font: 14;
+}
+.banner-text a {
+  padding: 15px 30px;
+  margin: 30px 40px;
+  background: var(--color1);
+  text-decoration: none;
+  color: var(--color3);
+}
+
+/* Estilo de la segunda seccion galeria de doctores */
+.seccion02 {
+  border: 5px solid var(--color1);
+  margin-bottom: 50px;
+}
+.doctores {
+  color: var(--color2);
+  margin: 0 auto;
+}
+
+.doctores-title {
+  margin: 50px;
+  text-align: center;
+}
+.doctores-title h1 {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.fila {
+  display: flex;
+  text-align: center;
+  align-content: space-around;
+}
+.columna {
+  margin: 10px;
+  border: 2px solid var(--color3);
+  flex: 25%;
+}
+.columna img {
+  width: 100%;  
+}
+
+.columna h1{
+  margin:5px 15px;
+  font-size: 14px;
+  color: var(--color1);
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.fa-brands {
+  border: 2px solid var(--color3);
+  margin: 3px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+/* Estilos de la tercera seccion galeria de doctores */
+.seccion03 {
+  border: 5px solid var(--color1);
+  background-image: url("./img/cirugia/banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  width: 100%;
+  height: 600px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  color: var(--color3);
+  max-width: 100%;
+}
+.colum {
+  max-width: 50%;
+}
+
+.colum img {
+  max-width: 100%;
+  height: 400px;
+}
+
+.secc-text {
+  padding: 0 20px;
+}
+.secc-text p {
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.secc-text h1{
+font-size: 29px;
+color: var(--color5);
+}
+
+.secc-text span{
+  font-size: 29px;
+  color: var(--color4);
+}
+
+.colum a {
+  display: block;
+  max-width: 30%;
+  margin-top: 40px;
+  padding: 10px 30px;
+  border-radius: 15px;
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--fuente-titulo);
+  background-color: var(--color3);
+  color: var(--color2);
+}
